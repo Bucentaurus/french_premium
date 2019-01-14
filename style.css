@@ -1,0 +1,114 @@
+@font-face {
+    font-family: BebasNeue-Regular;
+    src: url("fonts/BebasNeue-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BebasNeue-Light;
+    src: url("fonts/BebasNeue-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BebasNeue-Bold;
+    src: url("fonts/BebasNeue-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BebasNeue-Book;
+    src: url("fonts/BebasNeue-Book.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BebasNeue-Thin;
+    src: url("fonts/BebasNeue-Thin.otf") format("opentype");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+h1, h2 {
+    font-family: BebasNeue-Regular;
+}
+
+h1, .main_subtitle {
+    color: white;
+}
+
+h3 {
+    font-size: 1.125rem;
+}
+
+.button_french {
+    background-color: #EAC7B9;
+    border: none;
+    border-radius: 0;
+    font-weight: 100;
+    font-family: BebasNeue-Book;
+    line-height: normal;
+    padding-top: 3px;
+    width: 202px;
+    height: 48px;
+    color: white;
+}
+
+.section-1 {
+    background-image: url(images/background_first.png);
+    background-size: cover;
+    height: 100vh;
+    min-width: 100%;
+}
+
+.header {
+    height: 60px;
+    background-color: white;
+}
+
+.row-header {
+    min-height: 60px;
+}
+
+
+.title-row {
+    min-height: 60%;
+    margin-top: 18vh;
+}
+
+.logo_title {
+    font-size: 1.125rem;
+    font-weight: 900;
+    font-style: normal;
+    line-height: normal;
+}
+
+/* .row {
+    min-height: inherit;
+    min-width: inherit;
+} */
+
+.section-2 {
+    background-image: url(images/background_second.png);
+    background-size: cover;
+    height: 50vh;
+    min-width: 100%;
+}
+
+.ad-row {
+    height: 50vh;
+}
+
+.section-3 {
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.section-4 {
+    background-image: url(images/background_third.png);
+    background-size: cover;
+    height: 50vh;
+    min-width: 100%;
+}
