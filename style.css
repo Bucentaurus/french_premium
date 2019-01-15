@@ -38,6 +38,12 @@
     src: url("fonts/Montserrat-Light.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: Montserrat-Thin;
+    src: url("fonts/Montserrat-Thin.ttf") format("truetype");
+}
+
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 
@@ -56,7 +62,7 @@ h1, .main_subtitle {
 
 h3 {
     font-size: 1.125rem;
-    font-family: Montserrat-Light;
+    font-family: Montserrat-Thin;
 }
 
 a {
@@ -72,6 +78,7 @@ a:hover {
     background-color: #EAC7B9;
     border: none;
     border-radius: 0;
+    font-size: 1.1rem;
     font-weight: 100;
     font-family: BebasNeue-Book;
     line-height: normal;
@@ -88,13 +95,19 @@ a:hover {
     min-width: 100%;
 }
 
-.header {
+.header_mobile {
+    display: none;
+    background-color: white;
+}
+
+.header_desktop {
     height: 60px;
     background-color: white;
 }
 
-.row-header {
+.row-header, .header_mobile.row {
     min-height: 60px;
+    font-size: 0.85rem;
 }
 
 .free_webinar_link {
@@ -117,21 +130,17 @@ a:hover {
     color: black;
 }
 
-/* .row {
+.ad-row {
     min-height: inherit;
     min-width: inherit;
-} */
+}
 
 .section-2 {
     background-image: url(images/background_second.png);
     background-size: cover;
-    min-height: 250px;
+    min-height: 300px;
     max-height: 384px;
     min-width: 100%;
-}
-
-.ad-row {
-    height: 50vh;
 }
 
 .slogan {
@@ -140,9 +149,10 @@ a:hover {
 }
 
 .section-3 {
-    height: 768px;
+    height: 750px;
     min-width: 100%;
 }
+
 
 .col-title {
     font-family: Montserrat-Bold;
@@ -151,10 +161,64 @@ a:hover {
 .section-4 {
     background-image: url(images/background_third.png);
     background-size: cover;
-    height: 50vh;
+    min-height: 300px;
+    max-height: 384px;
     min-width: 100%;
 }
 
 .slogan-2 {
     color: #F7E8E2;
 }
+
+
+@media only screen and (max-width: 780px) {
+    body {
+        font-size: 0.85rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .header_desktop {
+        display: none;
+    }
+
+    .header_mobile {
+        display: flex;
+    }
+
+    .slogan {
+        font-size: 2rem;
+    }
+
+    .section-3 {
+        height: auto;
+        margin-bottom: 48px;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .section-2 {
+        background-image: url("images/background_second_mobile.png");
+    }
+
+    .slogan {
+      font-size: 1.8rem;
+    }
+
+  }
+
+  @media only screen and (max-width: 400px) {
+    .section-2 {
+        background-image: url("images/background_second_mobile.png");
+    }
+
+    .slogan {
+      font-size: 1.5rem;
+    }
+  }
