@@ -23,6 +23,21 @@
     src: url("fonts/BebasNeue-Thin.otf") format("opentype");
 }
 
+@font-face {
+    font-family: Montserrat-Black;
+    src: url("fonts/Montserrat-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url("fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url("fonts/Montserrat-Light.ttf") format("truetype");
+}
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 
@@ -41,6 +56,16 @@ h1, .main_subtitle {
 
 h3 {
     font-size: 1.125rem;
+    font-family: Montserrat-Light;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
 }
 
 .button_french {
@@ -72,6 +97,10 @@ h3 {
     min-height: 60px;
 }
 
+.free_webinar_link {
+    color: #EE8D77;
+}
+
 
 .title-row {
     min-height: 60%;
@@ -79,10 +108,13 @@ h3 {
 }
 
 .logo_title {
+    font-family: Montserrat-Black;
     font-size: 1.125rem;
-    font-weight: 900;
-    font-style: normal;
-    line-height: normal;
+    text-decoration: none;
+}
+
+.logo-title:hover {
+    color: black;
 }
 
 /* .row {
@@ -93,7 +125,8 @@ h3 {
 .section-2 {
     background-image: url(images/background_second.png);
     background-size: cover;
-    height: 50vh;
+    min-height: 250px;
+    max-height: 384px;
     min-width: 100%;
 }
 
@@ -101,9 +134,18 @@ h3 {
     height: 50vh;
 }
 
+.slogan {
+    font-size: 2.125rem;
+    font-family: Montserrat-Black;
+}
+
 .section-3 {
-    min-height: 100vh;
+    height: 768px;
     min-width: 100%;
+}
+
+.col-title {
+    font-family: Montserrat-Bold;
 }
 
 .section-4 {
@@ -111,4 +153,8 @@ h3 {
     background-size: cover;
     height: 50vh;
     min-width: 100%;
+}
+
+.slogan-2 {
+    color: #F7E8E2;
 }
